@@ -24,7 +24,7 @@ public class Usertest {
 
 	
 //	@Test
-//    public void verificaNivel(){
+//    public void verificaNivel(){ // verifica nivel1 forma facil 
 //		given()
 //		.when()
 //		 .get("http://restapi.wcaquino.me/users/1")
@@ -39,7 +39,7 @@ public class Usertest {
 //	
 //	
 //	@Test
-//    public void verificaOutrasformasN1(){
+//    public void verificaOutrasformasN1(){ // verifica dados em nivel1 de formas diferentes 
 //		Response response = RestAssured.request(Method.GET , "http://restapi.wcaquino.me/users/1");
 //		
 //		
@@ -59,7 +59,7 @@ public class Usertest {
 //
 //	
 //	@Test
-//    public void verificaNivel2(){
+//    public void verificaNivel2(){ // verifica dados em nivel2
 //		given()
 //		.when()
 //		  .get("http://restapi.wcaquino.me/users/2")
@@ -74,7 +74,7 @@ public class Usertest {
 //	
 	
 	@Test
-    public void verificaLista(){
+    public void verificaLista(){ // verifica lista que nao esteja na raiz
 		given()
 		.when()
 		  .get("http://restapi.wcaquino.me/users/3")
@@ -91,7 +91,7 @@ public class Usertest {
 	
 	
 	@Test
-    public void verificaMsgErroUserInex(){
+    public void verificaMsgErroUserInex(){ // verifica mensagem de erro 
 		given()
 		.when()
 		  .get("http://restapi.wcaquino.me/users/4")

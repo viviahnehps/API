@@ -6,7 +6,7 @@ import io.restassured.response.Response;
 import io.restassured.response.Validatable;
 import io.restassured.response.ValidatableResponse;
 
-public class Olamundo {
+public class Olamundo {  
 
 	public static void main(String[] args) {
 		Response response = RestAssured.request(Method.GET,"http://restapi.wcaquino.me/ola");

@@ -35,6 +35,7 @@ public class UsersTestXml {
 	public void TralhandoXml(){
 	 
 	 given() 
+	  .log().all()
 	     .when() 
 	       .get("http://restapi.wcaquino.me/usersXML/3") 
 	         .then()

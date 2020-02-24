@@ -8,22 +8,22 @@ import org.junit.Test;
 
 public class FileTest {
 
-	@Test
-	public void EnviaArqFake() {
+		@Test
+		public void EnviaArqFake() {
+				
+			 given()
+		     .log().all()
+	   	   .when()
+				 .post("http://restapi.wcaquino.me/upload") //  query enviada solicitando uma resposta formato xml
+			 .then()
+				.log().all() 
+				.statusCode(404) //mais é 400 api fora do padrão 
+			    .body("error", is("Arquivo não enviado"))		
+						
+			;
 			
-		 given()
-	     .log().all()
-   	   .when()
-			 .post("http://restapi.wcaquino.me/upload") //  query enviada solicitando uma resposta formato xml
-		 .then()
-			.log().all() 
-			.statusCode(404) //mais é 400 api fora do padrão 
-		    .body("error", is("Arquivo não enviado"))		
-					
-		;
+			}
 		
-		}
-	
  
   @Test
    public void EnviaArq() { //Não carregou o arquivo
@@ -43,4 +43,24 @@ public class FileTest {
 	
 	}
 
+  
+	@Test
+	public void DowloadArq() {
+			
+		 given()
+	     .log().all()
+ 	   .when()
+			 .post("http://restapi.wcaquino.me/dowload") //  query enviada solicitando uma resposta formato xml
+		 .then()
+			.log().all() 
+			.statusCode(200) //mais é 400 api fora do padrão 
+		    //.body("error", is("Arquivo não enviado"))		
+					
+		;
+		
+		}
+
+  
+  
+  
 }

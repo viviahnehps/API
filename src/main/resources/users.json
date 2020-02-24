@@ -1,0 +1,56 @@
+ 1 {
+ 2   "definitions": {},
+ 3   "$schema": "http://json-schema.org/draft-07/schema#",
+ 4   "$id": "http://example.com/root.json",
+ 5   "type": "array",
+ 6   "title": "The Root Schema",
+ 7   "items": {
+ 8     "$id": "#/items",
+ 9     "type": "object",
+10     "title": "The Items Schema",
+11     "required": [
+12       "id",
+13       "name",
+14       "age"
+15     ],
+16     "properties": {
+17       "id": {
+18         "$id": "#/items/properties/id",
+19         "type": "integer",
+20         "title": "The Id Schema",
+21         "default": 0,
+22         "examples": [
+23           1
+24         ]
+25       },
+26       "name": {
+27         "$id": "#/items/properties/name",
+28         "type": "string",
+29         "title": "The Name Schema",
+30         "default": "",
+31         "examples": [
+32           "João da Silva"
+33         ],
+34         "pattern": "^(.*)$"
+35       },
+36       "age": {
+37         "$id": "#/items/properties/age",
+38         "type": "integer",
+39         "title": "The Age Schema",
+40         "default": 0,
+41         "examples": [
+42           30
+43         ]
+44       },
+45       "salary": {
+46         "$id": "#/items/properties/salary",
+47         "type": "number",
+48         "title": "The Salary Schema",
+49         "default": 0.0,
+50         "examples": [
+51           1234.5678
+52         ]
+53       }
+54     }
+55   }
+56 }

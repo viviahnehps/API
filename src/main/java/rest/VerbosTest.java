@@ -3,17 +3,11 @@ package rest;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
-
-
 import org.hamcrest.Matchers;
 import static org.hamcrest.Matchers.*;
-
 import java.util.HashMap;
 import java.util.Map;
-
 import org.junit.Assert;
-import org.junit.Test;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 
 public class VerbosTest {
@@ -267,6 +261,7 @@ public class VerbosTest {
 		
 		}
 		
+	@SuppressWarnings("deprecation")
 	@Test //não funcionou
 	public void DesserializaXml() {
 		Users user = new Users("Juino desXML",43); // classe bean nde capturamos o objeto java

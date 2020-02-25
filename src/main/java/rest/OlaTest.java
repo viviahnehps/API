@@ -2,18 +2,11 @@ package rest;
 
 import static io.restassured.RestAssured.*;//import statico 
 import static org.hamcrest.Matchers.*;
-
 import java.util.Arrays;
 import java.util.List;
-
-import javax.management.RuntimeErrorException;
-
-import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.util.List.*;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
@@ -49,6 +42,7 @@ public class OlaTest {
 	    
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void metodoHamcrest(){
 	

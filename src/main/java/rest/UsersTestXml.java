@@ -1,28 +1,17 @@
 package rest;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.path.json.JsonPath.from;
 import static org.hamcrest.Matchers.containsString;
-import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.allOf;
 import static io.restassured.RestAssured.baseURI;
 import java.util.ArrayList;
-import java.util.Arrays;
-
-import org.hamcrest.Matcher;
-import org.hamcrest.Matchers;
-import org.hamcrest.Matchers.*;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import io.restassured.RestAssured;
-import io.restassured.http.Method;
+
 import io.restassured.internal.path.xml.NodeImpl;
-import io.restassured.matcher.ResponseAwareMatcher;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 
 public class UsersTestXml {
 
